@@ -2,7 +2,7 @@
   position: relative;
   left: 20%;
   margin-top: 1rem;
-width: 60%;
+  width: 60%;
 }
 
 .album-view-details {
@@ -96,6 +96,9 @@ width: 60%;
     top: 1rem;
     width: 80%;
     margin: auto;
+  }
+  .album-view-details {
+    position: relative;
   }
 }
 
