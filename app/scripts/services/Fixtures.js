@@ -43,7 +43,7 @@
         this.numberofAlbums.push(angular.copy(albumPicasso));
       }
 
-      return [numberOfAlbums];
+      return numberOfAlbums;
 
     };
 

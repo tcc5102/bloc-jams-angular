@@ -1,8 +1,9 @@
 (function() {
-  function AlbumCtrl(Fixtures) {
-    //uncomment below to make work
-    //var albumData = Fixtures.getAlbum();
+  function AlbumCtrl(Fixtures, SongPlayer) {
+//    Not sure about var albumData
+    var albumData = Fixtures.getAlbum();
     this.albumData = Fixtures.getAlbum();
+    this.songPlayer = SongPlayer;
     this.songs = albumData.songs;
     this.albumArtist = albumData.artist;
     this.albumTitle = albumData.title;
@@ -13,5 +14,5 @@
   }
   angular
     .module('blocJams')
-    .controller('AlbumCtrl', ['Fixtures', AlbumCtrl]);
+    .controller('AlbumCtrl', ['Fixtures', 'SongPlayer', AlbumCtrl]);
 })();
