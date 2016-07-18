@@ -1,15 +1,14 @@
 (function() {
   function AlbumCtrl(Fixtures, SongPlayer) {
-//    Not sure about var albumData
-    var albumData = Fixtures.getAlbum();
+
     this.albumData = Fixtures.getAlbum();
     this.songPlayer = SongPlayer;
-    this.songs = albumData.songs;
-    this.albumArtist = albumData.artist;
-    this.albumTitle = albumData.title;
-    this.albumImage = albumData.albumArtUrl;
-    this.albumYear = albumData.year;
-    this.albumLabel = albumData.label;
+    this.songs = this.albumData.songs;
+    this.albumArtist = this.albumData.artist;
+    this.albumTitle = this.albumData.title;
+    this.albumImage = this.albumData.albumArtUrl;
+    this.albumYear = this.albumData.year;
+    this.albumLabel = this.albumData.label;
 
   }
   angular
