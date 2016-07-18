@@ -109,7 +109,7 @@
       if (currentSongIndex < 0) {
         //
         //var song = currentAlbum.songs[currentSongIndex];
-        stopSong(SongPlayer.currentSong.playing);
+        setSong(SongPlayer.currentSong);
         //currentBuzzObject.stop();
         //SongPlayer.currentSong.playing = null;
       } else {
