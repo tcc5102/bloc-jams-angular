@@ -95,6 +95,14 @@
       }
     };
 
+    SongPlayer.volume = null;
+
+    SongPlayer.setVolume = function(volume) {
+      if (currentBuzzObject) {
+        currentBuzzObject.setVolume(volume);
+      }
+    };
+
     /**
     * @function play
     * @desc Play current or new song

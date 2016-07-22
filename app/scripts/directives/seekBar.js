@@ -38,6 +38,7 @@
           return percent + "%";
         };
 
+
         scope.fillStyle = function() {
           return {width: percentString()};
         };
